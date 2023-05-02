@@ -9,9 +9,10 @@ const Header = (props) => {
         className="header_img"
         src="https://www.freepnglogos.com/uploads/castle-png/castle-transparent-background-2.png"
       />
+      <span className={s.siteName}>SOCIAL NETWORKING</span>
       <div className={s.loginBlock} >
         {props.isAuth ? props.login
-        :<NavLink to = {'/login'} >Login</NavLink>}
+        :<NavLink className={s.Login}  to = {'/login'} >Login</NavLink>}
         </div>
     </header>
   );

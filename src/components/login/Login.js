@@ -1,13 +1,14 @@
-
 import React from "react";
 import {Formik, Form, Field, ErrorMessage} from "formik";
 import loginFormSchema from "../FormValidation/LoginFormSchema";
 import { connect } from "react-redux";
 import { login } from "../../redux/auth-reducer";
 
+import s from './Login.module.css';
+
 const Login = (props) => (
-    <div>
-        <h1>Login</h1>
+    <div className={s.loginForm}>
+        <h1 className={s.loginTitle}>Login</h1>
         <Formik
             initialValues={{email: "", password: "", rememberMe: false}}
             validate={values => {
@@ -26,27 +27,27 @@ const Login = (props) => (
             }}
             validationSchema={loginFormSchema}>
             {() => (
-                <Form>
-                    <div>
-                        <Field type={'text'} name={'email'} placeholder={'e-mail'}/>
+                <Form className={s.loginFormBody}>
+                    <div className={s.loginFormGroup}>
+                        <Field className={s.loginFormInput} type={'text'} name={'email'} placeholder={'e-mail'}/>
                     </div>
-                    <ErrorMessage name="email" component="div"/>
+                    <ErrorMessage className={s.loginFormError} name="email" component="div"/>
 
-                    <div>
-                        <Field type={'password'} name={'password'} placeholder={'password'}/>
+                    <div className={s.loginFormGroup}>
+                        <Field className={s.loginFormInput} type={'password'} name={'password'} placeholder={'password'}/>
                     </div>
-                    <ErrorMessage name="password" component="div"/>
+                    <ErrorMessage className={s.loginFormError} name="password" component="div"/>
 
-                    <div>
-                        <Field type={'checkbox'} name={'rememberMe'}/>
-                        <label htmlFor={'rememberMe'}> remember me </label>
+                    <div className={s.loginFormGroup}>
+                        <Field className={s.loginFormCheckbox} type={'checkbox'} name={'rememberMe'} id="rememberMe"/>
+                        <label className={s.loginFormLabel} htmlFor={'rememberMe'}> remember me </label>
                     </div>
 
-                    <button type={'submit'}>Log in</button>
+                    <button className={s.loginFormButton} type={'submit'}>Log in</button>
                 </Form>
             )}
         </Formik>
     </div>
 );
 
-export default Login
+export default Login;

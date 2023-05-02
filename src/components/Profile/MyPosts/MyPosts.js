@@ -8,7 +8,7 @@ import { Textarea } from "../../common/FormsControl/FormsControl";
 const MyPosts = (props) => {
 
   const postsElements = props.posts.map((p) => (
-    <Post key={p.id} id={p.id} message={p.message} likeCount={p.likeCount} />
+    <Post className = {s.post} key={p.id} id={p.id} message={p.message} likeCount={p.likeCount} />
   ));
 
   const onAddPost = (values, { resetForm }) => {
@@ -18,7 +18,7 @@ const MyPosts = (props) => {
 
   return (
     <div className={s.postsBlock}>
-      <h3>My posts</h3>
+      
 
       <Formik
         initialValues={{ newPostText: "" }}
@@ -32,19 +32,20 @@ const MyPosts = (props) => {
                 placeholder="Post message"
                 name="newPostText"
                 type={Textarea}
-                className={`${touched.newPostText && errors.newPostText ? s.error : ""}`}
+                className={s.inputPost}
               />
               {touched.newPostText && errors.newPostText && (
                 <div className={s.errorMessage}>{errors.newPostText}</div>
               )}
             </div>
             <div>
-              <button type="submit">Add post</button>
+              <button className ={s.btnPost} type="submit">Add post</button>
             </div>
           </Form>
         )}
       </Formik>
-
+      <h3>My posts:</h3>
+    
       <div className={s.posts}>{postsElements}</div>
     </div>
   );

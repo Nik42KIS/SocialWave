@@ -1,9 +1,59 @@
 .userPhoto{
+    border-radius: 10px;
     width: 100px;
     height: 100px;
+    
 }
 
 .selectedPage{
     font-weight: bold;
     color: white;
+    margin: 3px;
+}
+
+.userItem{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.userMain{
+
+}
+
+.userInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.userDesc{
+    margin: 5px;
+    font-size: 0.8rem;
+    color: #c8b9b9;
+    margin-bottom: 0.5rem;
+}
+
+.userName{
+    margin: 5px;
+    font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.btnUser{
+    margin-top: 5px;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+.btnUser:hover{
+    background-color: #c0392b;
 }

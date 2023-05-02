@@ -43,7 +43,8 @@ const Dialogs = (props) => {
   {({ handleSubmit, handleChange, values, errors, touched }) => (
     <form onSubmit={handleSubmit}>
       <div>
-        <Field
+        <Field 
+          className = {s.dialogInput}
           name="newMessageBody"
           type={Textarea}
           placeholder="Enter your message"
@@ -55,7 +56,7 @@ const Dialogs = (props) => {
         )}
       </div>
       <div>
-        <button type="submit">Send</button>
+        <button className={s.btnDialog} type="submit">Send</button>
       </div>
     </form>
   )}

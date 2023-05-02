@@ -1,14 +1,42 @@
 .header {
   grid-area: h;
-  background-color: green;
-
-
+  background-color: #EBDCB2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 .header img {
-  width: 40px;
+  display: inline-block;
+  width: 70px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
-.loginBlock{
-  float:right;
-  color: white;
+.Login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #f0a95d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.Login:hover {
+  background-color: #a45428;
+}
+
+.siteName {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  flex-grow: 1;
 }

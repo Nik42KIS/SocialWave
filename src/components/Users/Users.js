@@ -5,7 +5,7 @@ import userPhoto from "../../assets/images/imgUser.jpg"
 import { NavLink } from "react-router-dom";
 import axios from "axios";
 import { usersAPI } from "../../api/api";
-
+import s from "./users.module.css"
 
 
 let Users = (props) => {
@@ -32,8 +32,8 @@ let Users = (props) => {
       })}
     </div>
 
-      {props.users.map((u) =>  <div key={u.id}>
-          <span>
+      {props.users.map((u) =>  <div className={s.userItem} key={u.id}>
+          <span className={s.userMain}>
             <div>
 
               <NavLink to = {'/profile/' + u.id}>
@@ -43,13 +43,13 @@ let Users = (props) => {
             </div>
             <div>
               {u.followed ? (
-                <button disabled = {props.followingInProgress.some(id => id === u.id)}
+                <button className={s.btnUser} disabled = {props.followingInProgress.some(id => id === u.id)}
                   onClick={() => {props.unfollow(u.id)}}
                 >
                   UNFOLLOW
                 </button>
               ) : (
-                <button disabled = {props.followingInProgress.some(id => id === u.id)}
+                <button className={s.btnUser} disabled = {props.followingInProgress.some(id => id === u.id)}
                   onClick={() => {props.follow(u.id)}}
                 >
                   FOLLOW
@@ -57,12 +57,12 @@ let Users = (props) => {
               )}
             </div>
           </span>
-          <span>
+          <span className={s.userInfo}>
             <span>
-              <div>{u.name}</div>
+              <div className={s.userName}>{u.name}</div>
               <div>{u.status}</div>
             </span>
-            <span>
+            <span className={s.userDesc}>
               <div>{"u.location.city"}</div>
               <div>{"u.location.country"}</div>
             </span>
