@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/SocialSphere/static/css/main.24bd9d7a.css",
+    "main.js": "/SocialSphere/static/js/main.4fb63f52.js",
+    "static/media/imgUser.jpg": "/SocialSphere/static/media/imgUser.a4666bcc935b434854fc.jpg",
+    "static/media/Preloader.svg": "/SocialSphere/static/media/Preloader.4881856e9a2457165d5a2f83bdb15f73.svg",
+    "index.html": "/SocialSphere/index.html",
+    "main.24bd9d7a.css.map": "/SocialSphere/static/css/main.24bd9d7a.css.map",
+    "main.4fb63f52.js.map": "/SocialSphere/static/js/main.4fb63f52.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.24bd9d7a.css",
+    "static/js/main.4fb63f52.js"
+  ]
+}
