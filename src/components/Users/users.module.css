@@ -33,11 +33,12 @@
 .userDesc{
     margin: 5px;
     font-size: 0.8rem;
-    color: #c8b9b9;
+    color: #EDF5E1;
     margin-bottom: 0.5rem;
 }
 
 .userName{
+    color: #05386B;
     margin: 5px;
     font-size: 1.2rem;
   font-weight: bold;
@@ -46,8 +47,8 @@
 
 .btnUser{
     margin-top: 5px;
-    background-color: #e74c3c;
-    color: #fff;
+    background-color: #05386B ;
+    color: #EDF5E1;
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 5px;
@@ -55,5 +56,5 @@
     transition: background-color 0.2s ease-in-out;
 }
 .btnUser:hover{
-    background-color: #c0392b;
+    background-color: #5CDB95;
 }

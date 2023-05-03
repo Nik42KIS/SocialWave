@@ -1,6 +1,6 @@
 .header {
   grid-area: h;
-  background-color: #EBDCB2;
+  background-color:#8EE4AF ;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,27 +16,29 @@
 }
 
 .Login {
+  padding: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
+  height: 40px;
   font-size: 18px;
   font-weight: bold;
-  background-color: #f0a95d;
-  color: #fff;
+  background-color:   #379683;
+  color: #EDF5E1;
   text-decoration: none;
   border-radius: 10px;
   transition: background-color 0.3s ease;
 }
 
 .Login:hover {
-  background-color: #a45428;
+  background-color:#EDF5E1;
+  color:#379683;
 }
 
 .siteName {
   font-size: 24px;
   font-weight: bold;
-  color: #333;
+  color: #05386B ;
   text-align: center;
   flex-grow: 1;
 }

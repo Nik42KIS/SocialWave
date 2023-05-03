@@ -10,8 +10,7 @@
 .posts{
     
     flex: 1 1 300px;
-    background-color: #662E1C;
-    border: 1px solid #662E1C;
+    background-color: #8EE4AF ;
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -27,15 +26,15 @@
   }
 
 .errorMessage{
-    color: rgb(237, 156, 156);
+    color: rgb(148, 18, 18);
 }
 
 
 .btnPost{
     margin-top: 2px;
     background-color: transparent;
-    border: 2px solid #000000;
-    color: #000000;
+    border: 2px solid #05386B ;
+    color: #05386B ;
     font-size: 16px;
     padding: 5px 10px;
     text-align: center;
@@ -46,7 +45,7 @@
   }
   
   .btnPost:hover {
-    background-color: #000000;
+    background-color: #05386B ;
     color: #ffffff;
   }
 
@@ -54,12 +53,12 @@
    
     background-color: transparent;
     border: 0;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #05386B  ;
   }
 
   .inputPost:focus{
     outline: none;
-  border-bottom: 2px solid rgb(81, 68, 68);
+  border-bottom: 2px solid #EDF5E1;
   box-shadow: none;
 
 }

@@ -1,23 +1,46 @@
+/* Стили для блока диалогов */
 .dialogs {
   display: grid;
   grid-template-columns: 2fr 10fr;
+  height: calc(100vh - 80px); /* высота блока - высота хедера */
 }
+.dialog{}
 
 .dialogItems {
+
   padding: 10px;
+  background-color: #F2F2F2;
 }
 
 .dialogItems .active {
   color: gold;
 }
 
+/* Стили для блока сообщений */
 .messages {
   padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  background-color: #FFFFFF;
+  overflow-y: scroll; /* добавляем скроллбар, если сообщений много */
 }
 
+.message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  max-width: 70%; /* задаем максимальную ширину сообщения */
+}
+
+.message.sent {
+  background-color: #DCF8C6; /* цвет фона для отправленных сообщений */
+  align-self: flex-end; /* выравнивание отправленных сообщений вправо */
+}
+
+.message.received {
+  background-color: #E0E0E0; /* цвет фона для полученных сообщений */
+  align-self: flex-start; /* выравнивание полученных сообщений влево */
+}
+
+/* Стили для поля ввода сообщения */
 .dialogInput {
   width: 100%;
   font-size: 16px;
@@ -27,6 +50,7 @@
   background-color: #F2F2F2;
   outline: none;
   margin-top: 20px;
+  resize: none; /* запрещаем изменять размер поля ввода */
 }
 
 .dialogInput::placeholder {
@@ -37,6 +61,7 @@
   background-color: #E0E0E0;
 }
 
+/* Стили для кнопки отправки сообщения */
 .btnDialog {
   display: inline-block;
   padding: 10px 20px;
@@ -54,8 +79,7 @@
   background-color: #0052D6;
 }
 
-.dialogs form {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
+/* Стили для ошибки валидации */
+.error {
+  color: red;
 }

@@ -1,13 +1,13 @@
 .nav {
   grid-area: n;
-  background-color: #662E1C;
+  background-color: #5CDB95;
   padding: 40px;
   display: flex;
   flex-direction: column;
 }
 
 .item {
-  color: white;
+  color: #EDF5E1;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
@@ -20,7 +20,7 @@
 }
 
 .active {
-  color: #e8c462;
-  border-left: 5px solid #e8c462;
+  color: #05386B  ;
+  border-left: 5px solid #05386B ;
   padding-left: 5px;
 }
