@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/web-net/static/css/main.24bd9d7a.css",
-    "main.js": "/web-net/static/js/main.fc608c87.js",
-    "static/media/imgUser.jpg": "/web-net/static/media/imgUser.a4666bcc935b434854fc.jpg",
-    "static/media/Preloader.svg": "/web-net/static/media/Preloader.4881856e9a2457165d5a2f83bdb15f73.svg",
-    "index.html": "/web-net/index.html",
-    "main.24bd9d7a.css.map": "/web-net/static/css/main.24bd9d7a.css.map",
-    "main.fc608c87.js.map": "/web-net/static/js/main.fc608c87.js.map"
+    "main.css": "/SocialWave/static/css/main.24bd9d7a.css",
+    "main.js": "/SocialWave/static/js/main.27723bc5.js",
+    "static/media/imgUser.jpg": "/SocialWave/static/media/imgUser.a4666bcc935b434854fc.jpg",
+    "static/media/Preloader.svg": "/SocialWave/static/media/Preloader.4881856e9a2457165d5a2f83bdb15f73.svg",
+    "index.html": "/SocialWave/index.html",
+    "main.24bd9d7a.css.map": "/SocialWave/static/css/main.24bd9d7a.css.map",
+    "main.27723bc5.js.map": "/SocialWave/static/js/main.27723bc5.js.map"
   },
   "entrypoints": [
     "static/css/main.24bd9d7a.css",
-    "static/js/main.fc608c87.js"
+    "static/js/main.27723bc5.js"
   ]
 }
